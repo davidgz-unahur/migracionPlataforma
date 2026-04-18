@@ -1,9 +1,14 @@
-import example.pepita
+import example.*
 
-describe "group of tests for pepita" {
-
-  test "pepita has initial energy" {
-    assert.equals(100, pepita.energy())
+describe "Casos de prueba de etapa 1"{
+  test "Al inicio, Objetos1 tiene un niuvel de presencialidad de 20"{
+    assert.equals(20, objetos1.puntajeDeReputacion())
   }
 
+  test "Si dicta una clase exitosamente usand Teletuvix, su nivel de..."{
+    objetos1.dioClaseExitosa(teletuvix)
+    assert.equals(34, objetos1.puntajeDeReputacion())
+  }
 }
+
+//completar
